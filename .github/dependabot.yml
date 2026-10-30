@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Only GitHub Actions: the tool has no runtime dependencies.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "ci"
+    labels:
+      - dependencies
